@@ -1,0 +1,1 @@
+Rails.application.congi.i18n.default_locale = :ja
