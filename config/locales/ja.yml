@@ -7,6 +7,15 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+    models:
+      treat: ご褒美
+    attributes:
+      treat:
+        user: お名前
+        task: タスク名
+        task_level: タスクレベル
+        name: ご褒美
+        category: ご褒美カテゴリー 
   date:
     abbr_day_names:
     - 日

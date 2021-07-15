@@ -1,0 +1,25 @@
+h1.mt-5 みんなの履歴
+
+.mt-3.mb-3
+  = paginate @treats
+  / = page_entries_info @treats
+
+table.table.table-hover
+  thead.thead-default
+    tr
+      th= Treat.human_attribute_name(:user)
+      th= Treat.human_attribute_name(:task)
+      th= Treat.human_attribute_name(:task_level)
+      th= Treat.human_attribute_name(:category)
+      th= Treat.human_attribute_name(:name)
+  tbody
+    - @treats.each do |treat|
+      tr
+        td= treat.user
+        td= treat.task
+        td= treat.task_level
+        td= treat.category
+        td= treat.name
+
+.nav.justify-content-center.mb-3
+  = link_to "戻る", root_path, class: "nav-link back-link"

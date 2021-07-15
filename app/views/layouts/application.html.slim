@@ -8,8 +8,9 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    .app-title.navbar.navbar-expand-md.navbar-light.bg-light
-      .navbar-brand Treat Maker
+    .app-title.navbar.navbar-expand-md.navbar-light.bg-dark
+      .navbar-brand 
+        = link_to "Treat Maker", root_path, class: "header-titile ms-3"
       
     .container
       -if flash.notice.present?

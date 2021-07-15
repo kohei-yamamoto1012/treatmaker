@@ -1,0 +1,34 @@
+h4.mt-5
+  = "#{@treat.user}さんへのご褒美は..."
+h1.text-center
+  = "「#{@treat.name}する」"
+h4.text-end
+  | です！
+
+  = 
+/ h1 ご褒美の詳細
+
+table.table.table-hover
+  tbody
+    tr
+      th= Treat.human_attribute_name(:user)
+      td= @treat.user
+    tr
+      th= Treat.human_attribute_name(:task)
+      td= @treat.task
+    tr
+      th= Treat.human_attribute_name(:task_level)
+      td= @treat.task_level
+    tr
+      th= Treat.human_attribute_name(:category)
+      td= @treat.category
+    tr
+      th= Treat.human_attribute_name(:name)
+      td= @treat.name
+
+= link_to "Twitterに投稿する", "http://twitter.com/share?url=#{request.protocol + request.host}/&text=#{@treat.task}ができたら、#{@treat.name}します！%0a%23TreatMaker%0a", class: "btn btn-outline-primary"
+
+.nav.justify-content-center
+  = link_to "戻る", root_path, class: "nav-link back-link"
+
+
