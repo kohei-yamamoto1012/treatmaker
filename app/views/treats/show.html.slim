@@ -26,7 +26,7 @@ table.table.table-hover
       th= Treat.human_attribute_name(:name)
       td= @treat.name
 
-= link_to "Twitterに投稿する", "http://twitter.com/share?url=#{request.protocol + request.host}/&text=#{@treat.task}ができたら、#{@treat.name}します！%0a%23TreatMaker%0a", class: "btn btn-outline-primary"
+= link_to "Twitterに投稿する", "http://twitter.com/share?url=#{request.protocol + request.host}/&text=#{@treat.task}が達成できたら、#{@treat.name}します！%0a%23TreatMaker%0a", class: "btn btn-outline-primary"
 
 .nav.justify-content-center
   = link_to "戻る", root_path, class: "nav-link back-link"
