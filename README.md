@@ -12,4 +12,4 @@ Railsの入門的な知識を学習し終えたタイミングで、学習内容
 ## 使用技術
 - Ruby 2.6.8
 - Rails 5.2.5
-Bootstrap4
+- Bootstrap4
