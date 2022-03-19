@@ -1,24 +1,14 @@
-# README
+# TreatMaker
+![treatmaker herokuapp com_](https://user-images.githubusercontent.com/84756197/159107783-89491488-0fdb-4aa9-bcdf-0e0cd16ba314.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://treatmaker.herokuapp.com/
 
-Things you may want to cover:
+## サービス概要
+タスクに取り組む前に、タスクに対する「ご褒美」を設定してくれるアプリケーションです。<br>
+Railsの入門的な知識を学習し終えたタイミングで、学習内容の確認を兼ねて開発しました。
 
-* Ruby version
+開発期間: 3日
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使用技術
+- Ruby 2.6.8
+- Rails 5.2.5
